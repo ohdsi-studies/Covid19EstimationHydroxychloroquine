@@ -18,6 +18,119 @@ Many existing drugs are being considered for use in treatment and prophylaxis of
 
 This study is part of the OHDSI 2020 COVID-19 study-a-thon.
 
+Requirements
+============
+
+- A database in [Common Data Model version 5](https://github.com/OHDSI/CommonDataModel) in one of these platforms: SQL Server, Oracle, PostgreSQL, IBM Netezza, Apache Impala, Amazon RedShift, or Microsoft APS.
+- R version 3.5.0 or newer
+- On Windows: [RTools](http://cran.r-project.org/bin/windows/Rtools/)
+- [Java](http://java.com)
+- 25 GB of free disk space
+
+See [this video](https://youtu.be/K9_0s2Rchbo) for instructions on how to set up the R environment on Windows.
+
+How to run
+==========
+1. In `R`, use the following code to install the dependencies:
+
+  ```r
+  install.packages("devtools")
+  library(devtools)
+  install_github("ohdsi/SqlRender")
+  install_github("ohdsi/DatabaseConnector")
+  install_github("ohdsi/OhdsiSharing")
+  install_github("ohdsi/FeatureExtraction")
+  install_github("ohdsi/CohortMethod")
+  install_github("ohdsi/EmpiricalCalibration")
+  install_github("ohdsi/MethodEvaluation")
+  ```
+
+	If you experience problems on Windows where rJava can't find Java, one solution may be to add `args = "--no-multiarch"` to each `install_github` call, for example:
+	
+  ```r
+  install_github("ohdsi/SqlRender", args = "--no-multiarch")
+  ```
+	
+	Alternatively, ensure that you have installed both 32-bit and 64-bit JDK versions, as mentioned in the [video tutorial](https://youtu.be/K9_0s2Rchbo).
+	
+2. In 'R', use the following code to install the Covid19EstimationHydroxychloroquine package:
+
+  ```r
+  install_github("ohdsi-studies/Covid19EstimationHydroxychloroquine", args = "--no-multiarch")
+  ```
+	
+3. Once installed, you can execute the study by modifying and using the following code:
+	
+  ```r
+  library(Covid19EstimationHydroxychloroquine)
+  
+  # Optional: specify where the temporary files (used by the ff package) will be created:
+  options(fftempdir = "")
+  
+  # Maximum number of cores to be used:
+  maxCores <- parallel::detectCores()
+  
+  # Minimum cell count when exporting data:
+  minCellCount <- 5
+  
+  # The folder where the study intermediate and result files will be written:
+  outputFolder <- "c:/Covid19EstimationHydroxychloroquine"
+  
+  # Details for connecting to the server:
+  # See ?DatabaseConnector::createConnectionDetails for help
+  connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = "",
+  								server = "",
+  								user = "",
+  								password = "")
+  
+  # The name of the database schema where the CDM data can be found:
+  cdmDatabaseSchema <- ""
+  
+  # The name of the database schema and table where the study-specific cohorts will be instantiated:
+  cohortDatabaseSchema <- ""
+  cohortTable <- ""
+  
+  # Some meta-information that will be used by the export function:
+  Please use a short and descriptive databaseId and databaseName, e.g. OptumDOD
+  databaseId <- "" # required
+  databaseName <- "" # required
+  databaseDescription <- ""
+  
+  # For Oracle: define a schema that can be used to emulate temp tables:
+  oracleTempSchema <- NULL
+  
+  execute(connectionDetails = connectionDetails,
+          cdmDatabaseSchema = cdmDatabaseSchema,
+          cohortDatabaseSchema = cohortDatabaseSchema,
+          cohortTable = cohortTable,
+          oracleTempSchema = oracleTempSchema,
+          outputFolder = outputFolder,
+          databaseId = databaseId,
+          databaseName = databaseName,
+          databaseDescription = databaseDescription,
+          createCohorts = TRUE,
+          synthesizePositiveControls = FALSE,
+          runAnalyses = TRUE,
+          runDiagnostics = TRUE,
+          packageResults = TRUE,
+          maxCores = maxCores)
+  ```
+
+4. To view the results, use the Shiny app. Please keep the results blinded.
+
+  ```r
+  resultsZipFile <- file.path(outputFolder, "export", paste0("Results", databaseId, ".zip"))
+  dataFolder <- file.path(outputFolder, "shinyData")
+  prepareForEvidenceExplorer(resultsZipFile = resultsZipFile, dataFolder = dataFolder)
+  launchEvidenceExplorer(dataFolder = dataFolder, blind = TRUE, launch.browser = FALSE)
+```
+5. When completed, the output will exist as a .ZIP file in the `export` directory in the `output` folder location. This file contains the results to submit to the study lead. To do so, please use the function below. You must contact the study coordinator to receive the required private key.
+
+  ```r
+  OhdsiSharing::uploadResults <- function(outputFolder, privateKeyFileName, userName = "study-data-site-covid19"")
+  
+  ```
+
 License
 =======
-The Covid19DrugRepurposing package is licensed under Apache License 2.0
+The Covid19EstimationHydroxychloroquine package is licensed under Apache License 2.0

@@ -1,7 +1,7 @@
 library(Covid19EstimationHydroxychloroquine)
 
 # Optional: specify where the temporary files (used by the ff package) will be created:
-options(fftempdir = "")
+options(fftempdir = "S:/FFTemp")
 
 # Maximum number of cores to be used:
 maxCores <- parallel::detectCores()
@@ -12,8 +12,8 @@ outputFolder <- ""
 # Details for connecting to the server:
 connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = "pdw",
                                                                 server = Sys.getenv("server"),
-                                                                user = NULL,
-                                                                password = NULL,
+                                                                user = Sys.getenv("user"),
+                                                                password = Sys.getenv("password"),
                                                                 port = Sys.getenv("port"))
 
 # The name of the database schema where the CDM data can be found:
@@ -44,7 +44,7 @@ execute(connectionDetails = connectionDetails,
         createCohorts = TRUE,
         synthesizePositiveControls = FALSE,
         runAnalyses = TRUE,
-        runDiagnostics = FALSE,
+        runDiagnostics = TRUE,
         packageResults = TRUE,
         maxCores = maxCores)
 
