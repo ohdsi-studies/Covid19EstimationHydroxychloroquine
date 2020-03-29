@@ -1,0 +1,124 @@
+{
+  "ExpressionLimit": {"Type": "First"},
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {
+    "StartDate": null,
+    "EndDate": null
+  },
+  "ConceptSets": [{
+    "expression": {"items": [
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 315295,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "82523003",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Congestive rheumatic heart failure",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 316139,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "84114007",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Heart failure",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }
+    ]},
+    "name": "[LEGEND HTN] Heart Failure ",
+    "id": 1
+  }],
+  "EndStrategy": {"DateOffset": {
+    "DateField": "StartDate",
+    "Offset": 1
+  }},
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": [],
+  "AdditionalCriteria": {
+    "CriteriaList": [{
+      "RestrictVisit": false,
+      "StartWindow": {
+        "UseEventEnd": false,
+        "Start": {
+          "Days": 1,
+          "Coeff": 1
+        },
+        "End": {
+          "Days": 365,
+          "Coeff": 1
+        },
+        "UseIndexEnd": null
+      },
+      "IgnoreObservationPeriod": false,
+      "EndWindow": null,
+      "Criteria": {"ConditionOccurrence": {
+        "OccurrenceEndDate": null,
+        "CorrelatedCriteria": null,
+        "ConditionTypeExclude": false,
+        "CodesetId": 1,
+        "ProviderSpecialty": null,
+        "Gender": null,
+        "VisitType": null,
+        "First": null,
+        "OccurrenceStartDate": null,
+        "ConditionType": null,
+        "ConditionSourceConcept": null,
+        "StopReason": null,
+        "Age": null
+      }},
+      "Occurrence": {
+        "Type": 2,
+        "IsDistinct": false,
+        "Count": 1
+      }
+    }],
+    "Type": "ALL",
+    "DemographicCriteriaList": [],
+    "Groups": [],
+    "Count": null
+  },
+  "QualifiedLimit": {"Type": "First"},
+  "InclusionRules": [],
+  "PrimaryCriteria": {
+    "CriteriaList": [{"ConditionOccurrence": {
+      "OccurrenceEndDate": null,
+      "CorrelatedCriteria": null,
+      "ConditionTypeExclude": false,
+      "CodesetId": 1,
+      "ProviderSpecialty": null,
+      "Gender": null,
+      "VisitType": null,
+      "First": null,
+      "OccurrenceStartDate": null,
+      "ConditionType": null,
+      "ConditionSourceConcept": null,
+      "StopReason": null,
+      "Age": null
+    }}],
+    "PrimaryCriteriaLimit": {"Type": "All"},
+    "ObservationWindow": {
+      "PostDays": 0,
+      "PriorDays": 0
+    }
+  }
+}

@@ -1,0 +1,25 @@
+atlasId,atlasName,cohortId,name
+137,[OHDSI-Covid19] Hydroxychloroquine + Azithromycin,137,OHDSICovid19_Hydroxychloroquine__Azithromycin
+143,[OHDSI-Covid19] Hydroxychloroquine + Amoxicillin,143,OHDSICovid19_Hydroxychloroquine__Amoxicillin
+4,[OHDSI COV19] Hospitalizations with pneumonia,4,OHDSI_COV19_Hospitalizations_with_pneumonia
+5,[OHDSI Cov19] Episodes of acute respiratory distress,5,OHDSI_Cov19_Episodes_of_acute_respiratory_distress
+6,[LEGEND HTN] Persons with chest pain or angina,6,LEGEND_HTN_Persons_with_chest_pain_or_angina
+7,"[LEGEND HTN] Venous thromboembolic (pulmonary embolism and deep vein thrombosis) events ",7,LEGEND_HTN_Venous_thromboembolic_pulmonary_embolism_and_deep_vein_thrombosis_events_
+8,[LEGEND HTN] Acute renal failure events,8,LEGEND_HTN_Acute_renal_failure_events
+9,[LEGEND HTN] Persons with end stage renal disease,9,LEGEND_HTN_Persons_with_end_stage_renal_disease
+10,[LEGEND HTN] Persons with hepatic failure,10,LEGEND_HTN_Persons_with_hepatic_failure
+11,[LEGEND HTN] Acute pancreatitis events,11,LEGEND_HTN_Acute_pancreatitis_events
+12,[LEGEND HTN] Persons with heart failure,12,LEGEND_HTN_Persons_with_heart_failure
+13,[LEGEND HTN] Total cardiovascular disease events,13,LEGEND_HTN_Total_cardiovascular_disease_events
+15,[LEGEND HTN] Person with cardiac arrhythmia,15,LEGEND_HTN_Person_with_cardiac_arrhythmia
+16,[LEGEND HTN] Persons with bradycardia,16,LEGEND_HTN_Persons_with_bradycardia
+17,[LEGEND HTN] Gastrointestinal bleeding events,17,LEGEND_HTN_Gastrointestinal_bleeding_events
+18,[LEGEND HTN] All-cause mortality,18,LEGEND_HTN_Allcause_mortality
+19,[LEGEND HTN] Cardiovascular-related mortality,19,LEGEND_HTN_Cardiovascularrelated_mortality
+20,[LEGEND HTN] Transient ischemic attack events,20,LEGEND_HTN_Transient_ischemic_attack_events
+21,[LEGEND HTN] Stroke (ischemic or hemorrhagic) events,21,LEGEND_HTN_Stroke_ischemic_or_hemorrhagic_events
+22,[LEGEND HTN] Acute myocardial infarction events,22,LEGEND_HTN_Acute_myocardial_infarction_events
+26,[OHDSI Cov19] Episodes of influenza,26,OHDSI_Cov19_Episodes_of_influenza
+27,[OHDSI Cov19] Episodes of influenza symptoms or complications,27,OHDSI_Cov19_Episodes_of_influenza_symptoms_or_complications
+2,[OHDSI Cov19] New users of Hydroxychloroquine with prior rheumatoid arthritis,2,OHDSI_Cov19_New_users_of_Hydroxychloroquine_with_prior_rheumatoid_arthritis
+28,[OHDSI Cov19] New users of sulfasazine with prior rheumatoid arthritis,28,OHDSI_Cov19_New_users_of_sulfasazine_with_prior_rheumatoid_arthritis

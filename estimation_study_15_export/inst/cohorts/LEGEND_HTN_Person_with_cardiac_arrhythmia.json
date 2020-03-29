@@ -1,0 +1,455 @@
+{
+  "ExpressionLimit": {"Type": "First"},
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {
+    "StartDate": null,
+    "EndDate": null
+  },
+  "ConceptSets": [
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 44784217,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "698247007",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Cardiac arrhythmia",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 38001137,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "309",
+            "VOCABULARY_ID": "DRG",
+            "CONCEPT_NAME": "Cardiac arrhythmia & conduction disorders w CC",
+            "DOMAIN_ID": "Observation",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "MS-DRG",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 38001138,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "310",
+            "VOCABULARY_ID": "DRG",
+            "CONCEPT_NAME": "Cardiac arrhythmia & conduction disorders w/o CC/MCC",
+            "DOMAIN_ID": "Observation",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "MS-DRG",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 315078,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "80313002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Palpitations",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 444070,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "3424008",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Tachycardia",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "[LEGEND HTN] Cardiac arrhythmia",
+      "id": 0
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 21600248,
+            "STANDARD_CONCEPT": "C",
+            "CONCEPT_CODE": "C01B",
+            "VOCABULARY_ID": "ATC",
+            "CONCEPT_NAME": "ANTIARRHYTHMICS, CLASS I AND III",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Classification",
+            "CONCEPT_CLASS_ID": "ATC 3rd",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 43013024,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "1364430",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "apixaban",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 40228152,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "1037042",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "dabigatran etexilate",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 40241331,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "1114195",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "rivaroxaban",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 1310149,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "11289",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "Warfarin",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 1309204,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "296",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "Adenosine",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 45892847,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "1599538",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "edoxaban",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "[LEGEND HTN] Drugs used to treat cardiac arrhythmia",
+      "id": 1
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 45890325,
+            "STANDARD_CONCEPT": "C",
+            "CONCEPT_CODE": "1012978",
+            "VOCABULARY_ID": "CPT4",
+            "CONCEPT_NAME": "Cardioversion, elective, electrical conversion of arrhythmia",
+            "DOMAIN_ID": "Procedure",
+            "STANDARD_CONCEPT_CAPTION": "Classification",
+            "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 45890400,
+            "STANDARD_CONCEPT": "C",
+            "CONCEPT_CODE": "1014679",
+            "VOCABULARY_ID": "CPT4",
+            "CONCEPT_NAME": "Operative tissue ablation and reconstruction of atria, extensive (eg, maze procedure)",
+            "DOMAIN_ID": "Procedure",
+            "STANDARD_CONCEPT_CAPTION": "Classification",
+            "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 2107068,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "33259",
+            "VOCABULARY_ID": "CPT4",
+            "CONCEPT_NAME": "Operative tissue ablation and reconstruction of atria, performed at the time of other cardiac procedure(s), extensive (eg, maze procedure), with cardiopulmonary bypass (List separately in addition to code for primary procedure)",
+            "DOMAIN_ID": "Procedure",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "CPT4",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4051932,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "233154000",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Procedure for arrhythmia",
+            "DOMAIN_ID": "Procedure",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Procedure",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "[LEGEND HTN] Procedures to treat cardiac arrhythmia",
+      "id": 2
+    }
+  ],
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": [],
+  "AdditionalCriteria": {
+    "CriteriaList": [
+      {
+        "RestrictVisit": false,
+        "StartWindow": {
+          "UseEventEnd": false,
+          "Start": {
+            "Days": 1,
+            "Coeff": 1
+          },
+          "End": {
+            "Days": null,
+            "Coeff": 1
+          },
+          "UseIndexEnd": null
+        },
+        "IgnoreObservationPeriod": false,
+        "EndWindow": null,
+        "Criteria": {"ConditionOccurrence": {
+          "OccurrenceEndDate": null,
+          "CorrelatedCriteria": null,
+          "ConditionTypeExclude": false,
+          "CodesetId": 0,
+          "ProviderSpecialty": null,
+          "Gender": null,
+          "VisitType": null,
+          "First": null,
+          "OccurrenceStartDate": null,
+          "ConditionType": null,
+          "ConditionSourceConcept": null,
+          "StopReason": null,
+          "Age": null
+        }},
+        "Occurrence": {
+          "Type": 2,
+          "IsDistinct": false,
+          "Count": 1
+        }
+      },
+      {
+        "RestrictVisit": false,
+        "StartWindow": {
+          "UseEventEnd": false,
+          "Start": {
+            "Days": 0,
+            "Coeff": -1
+          },
+          "End": {
+            "Days": null,
+            "Coeff": 1
+          },
+          "UseIndexEnd": null
+        },
+        "IgnoreObservationPeriod": false,
+        "EndWindow": null,
+        "Criteria": {"DrugExposure": {
+          "OccurrenceEndDate": null,
+          "CorrelatedCriteria": null,
+          "DrugSourceConcept": null,
+          "CodesetId": 1,
+          "DrugTypeExclude": false,
+          "Quantity": null,
+          "DrugType": null,
+          "ProviderSpecialty": null,
+          "EffectiveDrugDose": null,
+          "Gender": null,
+          "DaysSupply": null,
+          "DoseUnit": null,
+          "VisitType": null,
+          "Refills": null,
+          "First": null,
+          "OccurrenceStartDate": null,
+          "RouteConcept": null,
+          "StopReason": null,
+          "LotNumber": null,
+          "Age": null
+        }},
+        "Occurrence": {
+          "Type": 2,
+          "IsDistinct": false,
+          "Count": 2
+        }
+      },
+      {
+        "RestrictVisit": false,
+        "StartWindow": {
+          "UseEventEnd": false,
+          "Start": {
+            "Days": 0,
+            "Coeff": -1
+          },
+          "End": {
+            "Days": null,
+            "Coeff": 1
+          },
+          "UseIndexEnd": null
+        },
+        "IgnoreObservationPeriod": false,
+        "EndWindow": null,
+        "Criteria": {"ProcedureOccurrence": {
+          "ProcedureType": null,
+          "CorrelatedCriteria": null,
+          "CodesetId": 2,
+          "ProcedureSourceConcept": null,
+          "Quantity": null,
+          "ProviderSpecialty": null,
+          "Gender": null,
+          "ProcedureTypeExclude": false,
+          "VisitType": null,
+          "First": null,
+          "OccurrenceStartDate": null,
+          "Modifier": null,
+          "Age": null
+        }},
+        "Occurrence": {
+          "Type": 2,
+          "IsDistinct": false,
+          "Count": 1
+        }
+      }
+    ],
+    "Type": "ANY",
+    "DemographicCriteriaList": [],
+    "Groups": [],
+    "Count": null
+  },
+  "QualifiedLimit": {"Type": "First"},
+  "InclusionRules": [],
+  "PrimaryCriteria": {
+    "CriteriaList": [{"ConditionOccurrence": {
+      "OccurrenceEndDate": null,
+      "CorrelatedCriteria": null,
+      "ConditionTypeExclude": false,
+      "CodesetId": 0,
+      "ProviderSpecialty": null,
+      "Gender": null,
+      "VisitType": null,
+      "First": true,
+      "OccurrenceStartDate": null,
+      "ConditionType": null,
+      "ConditionSourceConcept": null,
+      "StopReason": null,
+      "Age": null
+    }}],
+    "PrimaryCriteriaLimit": {"Type": "First"},
+    "ObservationWindow": {
+      "PostDays": 0,
+      "PriorDays": 0
+    }
+  }
+}

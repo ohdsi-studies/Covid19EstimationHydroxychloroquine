@@ -1,0 +1,154 @@
+{
+  "ExpressionLimit": {"Type": "First"},
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {
+    "StartDate": null,
+    "EndDate": null
+  },
+  "ConceptSets": [{
+    "expression": {"items": [
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4169095,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "48867003",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Bradycardia",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 316999,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "44808001",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Conduction disorder of the heart",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4171683,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "49710005",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Sinus bradycardia",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 317302,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "60423000",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Sinus node dysfunction",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }
+    ]},
+    "name": "[LEGEND HTN] Bradycardia",
+    "id": 5
+  }],
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": [],
+  "AdditionalCriteria": {
+    "CriteriaList": [{
+      "RestrictVisit": false,
+      "StartWindow": {
+        "UseEventEnd": false,
+        "Start": {
+          "Days": 1,
+          "Coeff": 1
+        },
+        "End": {
+          "Days": null,
+          "Coeff": 1
+        },
+        "UseIndexEnd": null
+      },
+      "IgnoreObservationPeriod": false,
+      "EndWindow": null,
+      "Criteria": {"ConditionOccurrence": {
+        "OccurrenceEndDate": null,
+        "CorrelatedCriteria": null,
+        "ConditionTypeExclude": false,
+        "CodesetId": 5,
+        "ProviderSpecialty": null,
+        "Gender": null,
+        "VisitType": null,
+        "First": null,
+        "OccurrenceStartDate": null,
+        "ConditionType": null,
+        "ConditionSourceConcept": null,
+        "StopReason": null,
+        "Age": null
+      }},
+      "Occurrence": {
+        "Type": 2,
+        "IsDistinct": false,
+        "Count": 1
+      }
+    }],
+    "Type": "ALL",
+    "DemographicCriteriaList": [],
+    "Groups": [],
+    "Count": null
+  },
+  "QualifiedLimit": {"Type": "First"},
+  "InclusionRules": [],
+  "PrimaryCriteria": {
+    "CriteriaList": [{"ConditionOccurrence": {
+      "OccurrenceEndDate": null,
+      "CorrelatedCriteria": null,
+      "ConditionTypeExclude": false,
+      "CodesetId": 5,
+      "ProviderSpecialty": null,
+      "Gender": null,
+      "VisitType": null,
+      "First": true,
+      "OccurrenceStartDate": null,
+      "ConditionType": null,
+      "ConditionSourceConcept": null,
+      "StopReason": null,
+      "Age": null
+    }}],
+    "PrimaryCriteriaLimit": {"Type": "First"},
+    "ObservationWindow": {
+      "PostDays": 0,
+      "PriorDays": 0
+    }
+  }
+}
