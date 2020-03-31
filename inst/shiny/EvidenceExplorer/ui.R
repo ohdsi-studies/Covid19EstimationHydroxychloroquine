@@ -3,7 +3,7 @@ library(DT)
 
 shinyUI(
   fluidPage(style = "width:1500px;",
-            titlePanel(paste("OHDSI COVID-19 Studyathon: Il6 and JAK inhibitors population-level effect estimation", if(blind) "***Blinded***" else "")),
+            titlePanel(paste("OHDSI COVID-19 Studyathon: Hydroxychloroquine population-level effect estimation", if(blind) "***Blinded***" else "")),
             tags$head(tags$style(type = "text/css", "
              #loadmessage {
                                  position: fixed;
