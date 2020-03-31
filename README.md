@@ -6,8 +6,8 @@ OHDSI COVID-19 Studyathon: Hydroxychloroquine population-level effect estimation
 - Analytics use case(s): **Population-Level Estimation**
 - Study type: **Clinical Application**
 - Tags: **Study-a-thon, COVID-19**
-- Study lead: **Jennifer Lane**
-- Study lead forums tag: **[jenniferlane](https://forums.ohdsi.org/u/jenniferlane)**
+- Study lead: **Jennifer Lane, James Weaver**
+- Study lead forums tag: **[jenniferlane](https://forums.ohdsi.org/u/jenniferlane), [jweave17](https://forums.ohdsi.org/u/jweave17)**
 - Study start date: **March 26, 2020**
 - Study end date: **-**
 - Protocol: **-**
@@ -45,18 +45,10 @@ How to run
   install_github("ohdsi/MethodEvaluation")
   ```
 
-	If you experience problems on Windows where rJava can't find Java, one solution may be to add `args = "--no-multiarch"` to each `install_github` call, for example:
-	
-  ```r
-  install_github("ohdsi/SqlRender", args = "--no-multiarch")
-  ```
-	
-	Alternatively, ensure that you have installed both 32-bit and 64-bit JDK versions, as mentioned in the [video tutorial](https://youtu.be/K9_0s2Rchbo).
-	
 2. In 'R', use the following code to install the Covid19EstimationHydroxychloroquine package:
 
   ```r
-  install_github("ohdsi-studies/Covid19EstimationHydroxychloroquine", args = "--no-multiarch")
+  devtools::install_github("ohdsi-studies/Covid19EstimationHydroxychloroquine")
   ```
 	
 3. Once installed, you can execute the study by modifying and using the following code:
@@ -79,9 +71,9 @@ How to run
   # Details for connecting to the server:
   # See ?DatabaseConnector::createConnectionDetails for help
   connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = "",
-  								server = "",
-  								user = "",
-  								password = "")
+                                                                  server = "",
+                                                                  user = "",
+                                                                  password = "")
   
   # The name of the database schema where the CDM data can be found:
   cdmDatabaseSchema <- ""
@@ -92,11 +84,11 @@ How to run
   
   # Some meta-information that will be used by the export function:
   Please use a short and descriptive databaseId and databaseName, e.g. OptumDOD
-  databaseId <- "" # required
-  databaseName <- "" # required
+  databaseId <- ""
+  databaseName <- ""
   databaseDescription <- ""
   
-  # For Oracle: define a schema that can be used to emulate temp tables:
+  # If using Oracle, define a schema that can be used to emulate temp tables. Otherwise set as NULL:
   oracleTempSchema <- NULL
   
   execute(connectionDetails = connectionDetails,
@@ -124,11 +116,12 @@ How to run
   prepareForEvidenceExplorer(resultsZipFile = resultsZipFile, dataFolder = dataFolder)
   launchEvidenceExplorer(dataFolder = dataFolder, blind = TRUE, launch.browser = FALSE)
 ```
-5. When completed, the output will exist as a .ZIP file in the `export` directory in the `output` folder location. This file contains the results to submit to the study lead. To do so, please use the function below. You must contact the study coordinator to receive the required private key.
+5. When completed, the output will exist as a .ZIP file in the `export` directory in the `output` folder location. This file contains the results to submit to the study lead. To do so, please use the function below.  You must supply the directory location to where you have saved the `study-data-site-covid19.dat` file to the `privateKeyFileName` argument. You must contact the study coordinator to receive the required private key.
 
   ```r
-  OhdsiSharing::uploadResults <- function(outputFolder, privateKeyFileName, userName = "study-data-site-covid19"")
-  
+  Covid19EstimationHydroxychloroquine:::uploadResults(outputFolder = <directory location of outputFolder/export>, 
+                                                      privateKeyFileName = <directory loaction of study-data-site-covid19.dat>,
+                                                      userName = "study-data-site-covid19"
   ```
 
 License
