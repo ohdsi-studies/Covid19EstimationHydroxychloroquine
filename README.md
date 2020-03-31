@@ -83,7 +83,7 @@ How to run
   cohortTable <- ""
   
   # Some meta-information that will be used by the export function:
-  Please use a short and descriptive databaseId and databaseName, e.g. OptumDOD
+  # Please use a short and descriptive databaseId and databaseName, e.g. OptumDOD
   databaseId <- ""
   databaseName <- ""
   databaseDescription <- ""
