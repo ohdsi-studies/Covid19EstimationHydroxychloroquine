@@ -75,8 +75,8 @@ from
   FROM @cdm_database_schema.DRUG_EXPOSURE de
 JOIN #Codesets codesets on ((de.drug_concept_id = codesets.concept_id and codesets.codeset_id = 0))
 ) C
-
-
+JOIN @cdm_database_schema.PERSON P on C.person_id = P.person_id
+WHERE YEAR(C.drug_exposure_start_date) - P.year_of_birth >= 18
 -- End Drug Exposure Criteria
 
 UNION ALL
@@ -90,8 +90,8 @@ from
   FROM @cdm_database_schema.DRUG_EXPOSURE de
 JOIN #Codesets codesets on ((de.drug_concept_id = codesets.concept_id and codesets.codeset_id = 2))
 ) C
-
-
+JOIN @cdm_database_schema.PERSON P on C.person_id = P.person_id
+WHERE YEAR(C.drug_exposure_start_date) - P.year_of_birth >= 18
 -- End Drug Exposure Criteria
 
   ) E

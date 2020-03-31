@@ -38,6 +38,6 @@ this can speed up the analyses.}
 Synthesize positive controls
 }
 \details{
-This function will synthesize positve controls based on the negative controls. The simulated outcomes
+This function will synthesize positive controls based on the negative controls. The simulated outcomes
 will be added to the cohort table.
 }

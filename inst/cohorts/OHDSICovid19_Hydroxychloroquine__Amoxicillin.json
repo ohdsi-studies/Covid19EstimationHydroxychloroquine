@@ -555,7 +555,11 @@
         "RouteConcept": null,
         "StopReason": null,
         "LotNumber": null,
-        "Age": null
+        "Age": {
+          "Op": "gte",
+          "Extent": null,
+          "Value": 18
+        }
       }},
       {"DrugExposure": {
         "OccurrenceEndDate": null,
@@ -577,7 +581,11 @@
         "RouteConcept": null,
         "StopReason": null,
         "LotNumber": null,
-        "Age": null
+        "Age": {
+          "Op": "gte",
+          "Extent": null,
+          "Value": 18
+        }
       }}
     ],
     "PrimaryCriteriaLimit": {"Type": "All"},

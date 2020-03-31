@@ -410,7 +410,11 @@
       "RouteConcept": null,
       "StopReason": null,
       "LotNumber": null,
-      "Age": null
+      "Age": {
+        "Op": "gte",
+        "Extent": null,
+        "Value": 18
+      }
     }}],
     "PrimaryCriteriaLimit": {"Type": "First"},
     "ObservationWindow": {
