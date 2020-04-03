@@ -44,9 +44,11 @@ How to run
   install_github("ohdsi/EmpiricalCalibration")
   install_github("ohdsi/MethodEvaluation")
   ```
-*Note: Failure to update packages to latest versions as of 26MAR2020 (especially Empirical Calibration) may result in errors in study packaging during export. If you encounter an error message during installation that says, 'Failure to create lock directory.' try...
+*Note: Failure to update packages to latest versions as of 26MAR2020 (especially Empirical Calibration) may result in errors in study packaging during export. If you encounter an error message during installation that says, 'Failure to create lock directory.' Try the following.*
+```r
 install_github("ohdsi/FeatureExtraction" dependencies = TRUE, INSTALL_opts = '--no-lock')*
-
+  ```
+  
 2. In 'R', use the following code to install the Covid19EstimationHydroxychloroquine package:
 
   ```r
