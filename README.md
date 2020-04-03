@@ -46,7 +46,7 @@ How to run
   ```
 *Note: Failure to update packages to latest versions as of 26MAR2020 (especially Empirical Calibration) may result in errors in study packaging during export. If you encounter an error message during installation that says, 'Failure to create lock directory.' Try the following.*
 ```r
-install_github("ohdsi/FeatureExtraction" dependencies = TRUE, INSTALL_opts = '--no-lock')*
+install_github("ohdsi/FeatureExtraction" dependencies = TRUE, INSTALL_opts = '--no-lock')
   ```
   
 2. In 'R', use the following code to install the Covid19EstimationHydroxychloroquine package:
@@ -121,6 +121,7 @@ install_github("ohdsi/FeatureExtraction" dependencies = TRUE, INSTALL_opts = '--
   prepareForEvidenceExplorer(resultsZipFile = resultsZipFile, dataFolder = dataFolder)
   launchEvidenceExplorer(dataFolder = dataFolder, blind = TRUE, launch.browser = FALSE)
 ```
+
 5. When completed, the output will exist as a .ZIP file in the `export` directory in the `output` folder location. This file contains the results to submit to the study lead. To do so, please use the function below.  You must supply the directory location to where you have saved the `study-data-site-covid19.dat` file to the `privateKeyFileName` argument. You must contact the [study coordinator](mailto:kristin.kostka@iqvia.com) to receive the required private key.
 
   ```r
