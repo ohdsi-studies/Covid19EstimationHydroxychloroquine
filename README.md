@@ -126,7 +126,7 @@ install_github("ohdsi/FeatureExtraction", dependencies = TRUE, INSTALL_opts = '-
 
   ```r
 	keyFileName <- "<directory loaction of study-data-site-covid19.dat>"
-	username <- "study-data-covid19"
+	username <- "study-data-site-covid19"
 	OhdsiSharing::sftpUploadFile(privateKeyFileName = keyFileName,
                              userName = userName,
                              remoteFolder = "Covid19EstimationHydroxychloroquine",
