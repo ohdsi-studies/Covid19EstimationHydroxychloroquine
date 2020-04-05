@@ -125,8 +125,8 @@ install_github("ohdsi/FeatureExtraction", dependencies = TRUE, INSTALL_opts = '-
 5. When completed, the output will exist as a .ZIP file in the `export` directory in the `output` folder location. This file contains the results to submit to the study lead. To do so, please use the function below.  You must supply the directory location to where you have saved the `study-data-site-covid19.dat` file to the `privateKeyFileName` argument. You must contact the [study coordinator](mailto:kristin.kostka@iqvia.com) to receive the required private key.
 
   ```r
-	keyFileName <- "<directory loaction of study-data-site-covid19.dat>"
-	username <- "study-data-site-covid19"
+	keyFileName <- "<directory location of study-data-site-covid19.dat>"
+	userName <- "study-data-site-covid19"
 	OhdsiSharing::sftpUploadFile(privateKeyFileName = keyFileName,
                              userName = userName,
                              remoteFolder = "Covid19EstimationHydroxychloroquine",
