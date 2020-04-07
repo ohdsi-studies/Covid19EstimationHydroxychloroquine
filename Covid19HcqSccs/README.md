@@ -80,7 +80,7 @@ How to run
           oracleTempSchema = oracleTempSchema,
           outputFolder = outputFolder,
           databaseId = databaseId,
-          createCohorts = FALSE,
+          createCohorts = TRUE,
           runSccs = TRUE,
           runSccsDiagnostics = TRUE,
           generateBasicOutputTable = TRUE,
