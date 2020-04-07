@@ -1,0 +1,207 @@
+group,outcomeId,outcomeName,type
+DMARDs,378256,Abnormal reflex,Outcome
+DMARDs,443585,Abrasion and/or friction burn of multiple sites,Outcome
+DMARDs,4092879,Absent kidney,Outcome
+DMARDs,44783954,Acid reflux,Outcome
+DMARDs,433753,Alcohol abuse,Outcome
+DMARDs,4155909,Anesthesia of skin,Outcome
+DMARDs,321689,Apnea,Outcome
+DMARDs,78200,Benign mammary dysplasia,Outcome
+DMARDs,4195873,Breath smells unpleasant,Outcome
+DMARDs,443792,Calculus of bile duct,Outcome
+DMARDs,434327,Cannabis abuse,Outcome
+DMARDs,197318,Cholesterolosis of gallbladder,Outcome
+DMARDs,432303,Cocaine abuse,Outcome
+DMARDs,439125,Complete trisomy 21 syndrome,Outcome
+DMARDs,433270,Cord entanglement without compression,Outcome
+DMARDs,4311591,Cramp in limb,Outcome
+DMARDs,441267,Cystic fibrosis,Outcome
+DMARDs,436233,Delayed milestone,Outcome
+DMARDs,40486120,Delay in physiological development,Outcome
+DMARDs,4114472,Ear problem,Outcome
+DMARDs,439791,Emotional upset,Outcome
+DMARDs,433527,Endometriosis,Outcome
+DMARDs,374801,Foreign body in ear,Outcome
+DMARDs,259995,Foreign body in orifice,Outcome
+DMARDs,196456,Gallstone,Outcome
+DMARDs,4166231,Genetic predisposition,Outcome
+DMARDs,434164,Glycosuria,Outcome
+DMARDs,4163735,Hemochromatosis,Outcome
+DMARDs,439871,Hemospermia,Outcome
+DMARDs,4012570,High risk sexual behavior,Outcome
+DMARDs,4058388,Hypertrophic scar,Outcome
+DMARDs,435522,Hypervitaminosis D,Outcome
+DMARDs,443236,Hypnotic or anxiolytic dependence,Outcome
+DMARDs,4098604,Hypomagnesemia,Outcome
+DMARDs,435371,Hypothermia,Outcome
+DMARDs,443447,Iatrogenic hypotension,Outcome
+DMARDs,374375,Impacted cerumen,Outcome
+DMARDs,4344500,Impingement syndrome of shoulder region,Outcome
+DMARDs,440382,Learning difficulties,Outcome
+DMARDs,435516,Lipoprotein deficiency disorder,Outcome
+DMARDs,438808,Mammary duct ectasia,Outcome
+DMARDs,439082,Menopausal syndrome,Outcome
+DMARDs,441553,Myoclonus,Outcome
+DMARDs,4119307,Neurogenic claudication,Outcome
+DMARDs,4209423,Nicotine dependence,Outcome
+DMARDs,40304526,Nocturia,Outcome
+DMARDs,438130,Opioid abuse,Outcome
+DMARDs,378160,Otorrhea,Outcome
+DMARDs,313601,Oxygen supply absent,Outcome
+DMARDs,44782778,Pain disorder with psychological factor,Outcome
+DMARDs,4091513,Passing flatus,Outcome
+DMARDs,4022076,Patient dependence on care provider,Outcome
+DMARDs,439971,Poisoning by anticoagulant,Outcome
+DMARDs,441191,Poisoning due to arthropod venom,Outcome
+DMARDs,4295261,Postmenopausal state,Outcome
+DMARDs,198715,Premature menopause,Outcome
+DMARDs,439081,Premenstrual tension syndrome,Outcome
+DMARDs,46286594,Problem related to lifestyle,Outcome
+DMARDs,199876,Prolapse of female genital organs,Outcome
+DMARDs,4049367,Psychologic conversion disorder,Outcome
+DMARDs,440068,Psychosexual dysfunction,Outcome
+DMARDs,436246,Reduced libido,Outcome
+DMARDs,73754,Restless legs,Outcome
+DMARDs,4168212,Restlessness and agitation,Outcome
+DMARDs,80811,Rupture of extensor tendons of hand AND/OR wrist,Outcome
+DMARDs,81943,Rupture of flexor tendons of hand AND/OR wrist,Outcome
+DMARDs,138821,Seborrhea,Outcome
+DMARDs,4198492,Shoulder joint unstable,Outcome
+DMARDs,25518,Sickle cell trait,Outcome
+DMARDs,4176908,Snapping thumb syndrome,Outcome
+DMARDs,4248728,Snoring,Outcome
+DMARDs,138278,Sprains and strains of joints and adjacent muscles,Outcome
+DMARDs,4008710,"Stenosis due to any device, implant AND/OR graft",Outcome
+DMARDs,40479573,Stimulant abuse,Outcome
+DMARDs,40483172,Stimulant dependence,Outcome
+DMARDs,440233,Strain of supraspinatus muscle AND/OR tendon,Outcome
+DMARDs,4194160,Thyroid function tests abnormal,Outcome
+DMARDs,4216708,Urgent desire for stool,Outcome
+DMARDs,79873,Urolith,Outcome
+DMARDs,4275889,Visual hallucinations,Outcome
+DMARDs,4193634,Worried,Outcome
+Antihypertensives,134438,Contact dermatitis,Outcome
+Antihypertensives,141932,Senile hyperkeratosis,Outcome
+Antihypertensives,140648,Onychomycosis due to dermatophyte,Outcome
+Antihypertensives,374375,Impacted cerumen,Outcome
+Antihypertensives,378427,Tear film insufficiency,Outcome
+Antihypertensives,437264,Tobacco dependence syndrome,Outcome
+Antihypertensives,373478,Presbyopia,Outcome
+Antihypertensives,139099,Ingrowing nail,Outcome
+Antihypertensives,36713918,Somatic dysfunction of lumbar region,Outcome
+Antihypertensives,140641,Verruca vulgaris,Outcome
+Antihypertensives,4115367,Wrist joint pain,Outcome
+Antihypertensives,194083,Vaginitis and vulvovaginitis,Outcome
+Antihypertensives,4213540,Cervical somatic dysfunction,Outcome
+Antihypertensives,444132,Injury of knee,Outcome
+Antihypertensives,81151,Sprain of ankle,Outcome
+Antihypertensives,440329,Herpes zoster without complication,Outcome
+Antihypertensives,73560,Calcaneal spur,Outcome
+Antihypertensives,433577,Hammer toe,Outcome
+Antihypertensives,81378,Chondromalacia of patella,Outcome
+Antihypertensives,72748,Strain of rotator cuff capsule,Outcome
+Antihypertensives,75911,Acquired hallux valgus,Outcome
+Antihypertensives,441788,Human papilloma virus infection,Outcome
+Antihypertensives,136368,Non-toxic multinodular goiter,Outcome
+Antihypertensives,376707,Acute conjunctivitis,Outcome
+Antihypertensives,77965,Acquired trigger finger,Outcome
+Antihypertensives,137951,Acquired keratoderma,Outcome
+Antihypertensives,73241,Anal and rectal polyp,Outcome
+Antihypertensives,4209423,Nicotine dependence,Outcome
+Antihypertensives,76786,Derangement of knee,Outcome
+Antihypertensives,78619,Contusion of knee,Outcome
+Antihypertensives,196168,Irregular periods,Outcome
+Antihypertensives,4092896,Feces contents abnormal,Outcome
+Antihypertensives,380706,Regular astigmatism,Outcome
+Antihypertensives,195873,Leukorrhea,Outcome
+Antihypertensives,4344500,Impingement syndrome of shoulder region,Outcome
+Antihypertensives,4170770,Epidermoid cyst,Outcome
+Antihypertensives,4103703,Melena,Outcome
+Antihypertensives,4088290,Absence of breast,Outcome
+Antihypertensives,40480893,Nonspecific tuberculin test reaction,Outcome
+Antihypertensives,4083487,Macular drusen,Outcome
+Antihypertensives,201606,Crohn's disease,Outcome
+Antihypertensives,433527,Endometriosis,Outcome
+Antihypertensives,434165,Abnormal cervical smear,Outcome
+Antihypertensives,140842,Changes in skin texture,Outcome
+Antihypertensives,4201390,Colostomy present,Outcome
+Antihypertensives,439790,Psychalgia,Outcome
+Antihypertensives,4092879,Absent kidney,Outcome
+Antihypertensives,4012570,High risk sexual behavior,Outcome
+Antihypertensives,4115402,Difficulty sleeping,Outcome
+Antihypertensives,438130,Opioid abuse,Outcome
+Antihypertensives,434327,Cannabis abuse,Outcome
+Antihypertensives,199192,Abrasion and/or friction burn of trunk without infection,Outcome
+Antihypertensives,44783954,Acid reflux,Outcome
+Antihypertensives,46269889,Complication due to Crohn's disease,Outcome
+Antihypertensives,4166231,Genetic predisposition,Outcome
+Antihypertensives,4201717,Ileostomy present,Outcome
+Antihypertensives,4091513,Passing flatus,Outcome
+Antihypertensives,40481632,Ganglion cyst,Outcome
+Antihypertensives,4231770,Hereditary thrombophilia,Outcome
+Antihypertensives,259995,Foreign body in orifice,Outcome
+Antihypertensives,432303,Cocaine abuse,Outcome
+Antihypertensives,46286594,Problem related to lifestyle,Outcome
+Antihypertensives,432593,Kwashiorkor,Outcome
+Antihypertensives,4202045,Postviral fatigue syndrome,Outcome
+Antihypertensives,81634,Ptotic breast,Outcome
+Antihypertensives,377572,Noise effects on inner ear,Outcome
+Antihypertensives,436409,Abnormal pupil,Outcome
+Antihypertensives,4012934,Homocystinuria,Outcome
+Antihypertensives,4103640,Amputated foot,Outcome
+Antihypertensives,433111,Effects of hunger,Outcome
+Antihypertensives,434203,Late effect of contusion,Outcome
+Antihypertensives,438329,Late effect of motor vehicle accident,Outcome
+Antihypertensives,45757370,Disproportion of reconstructed breast,Outcome
+Antihypertensives,133655,Burn of forearm,Outcome
+Antihypertensives,443172,"Splinter of face, without major open wound",Outcome
+Antihypertensives,440193,Wristdrop,Outcome
+Antivirals,77234,Benign neoplasm of colon,Outcome
+Antivirals,374375,Impacted cerumen,Outcome
+Antivirals,4209423,Nicotine dependence,Outcome
+Antivirals,134460,Plantar fascial fibromatosis,Outcome
+Antivirals,36713918,Somatic dysfunction of lumbar region,Outcome
+Antivirals,4213540,Cervical somatic dysfunction,Outcome
+Antivirals,4012368,Increased frequency of urination,Outcome
+Antivirals,4164898,Diverticulosis of large intestine without diverticulitis,Outcome
+Antivirals,136497,Scar conditions and fibrosis of skin,Outcome
+Antivirals,36714126,Difficulty walking,Outcome
+Antivirals,381877,Dysfunction of eustachian tube,Outcome
+Antivirals,4142875,Solitary nodule of lung,Outcome
+Antivirals,192450,Retention of urine,Outcome
+Antivirals,4110815,"Sensorineural hearing loss, bilateral",Outcome
+Antivirals,77139,Open wound of finger without complication,Outcome
+Antivirals,73560,Calcaneal spur,Outcome
+Antivirals,196168,Irregular periods,Outcome
+Antivirals,46286594,Problem related to lifestyle,Outcome
+Antivirals,4094343,Dislocations/sprains/strains,Outcome
+Antivirals,4245252,Raised prostate specific antigen,Outcome
+Antivirals,4131791,Hydrocele of testis,Outcome
+Antivirals,443274,Psychostimulant dependence,Outcome
+Antivirals,4344500,Impingement syndrome of shoulder region,Outcome
+Antivirals,74464,Idiopathic scoliosis AND/OR kyphoscoliosis,Outcome
+Antivirals,432303,Cocaine abuse,Outcome
+Antivirals,4268622,Stricture of esophagus,Outcome
+Antivirals,132781,Mechanical complication of vascular device,Outcome
+Antivirals,77079,Spinal stenosis,Outcome
+Antivirals,40479573,Stimulant abuse,Outcome
+Antivirals,72711,Shoulder stiff,Outcome
+Antivirals,4167097,Spondylolisthesis,Outcome
+Antivirals,45757380,"Human papilloma virus deoxyribonucleic acid test positive, high risk on anal specimen",Outcome
+Antivirals,79873,Urolith,Outcome
+Antivirals,201606,Crohn's disease,Outcome
+Antivirals,440905,Toxic effect of venom,Outcome
+Antivirals,194993,Intestinal malabsorption,Outcome
+Antivirals,135214,Polycythemia vera,Outcome
+Antivirals,45772671,Nodular prostate without urinary obstruction,Outcome
+Antivirals,443585,Abrasion and/or friction burn of multiple sites,Outcome
+Antivirals,444428,Nonvenomous insect bite without infection,Outcome
+Antivirals,4141640,Perimenopausal disorder,Outcome
+Antivirals,439935,Abnormal posture,Outcome
+Antivirals,79917,Acquired deformity of toe,Outcome
+Antivirals,438252,Spontaneous ecchymosis,Outcome
+Antivirals,375292,Perforation of tympanic membrane,Outcome
+Antivirals,4058388,Hypertrophic scar,Outcome
+Antivirals,76153,Low compliance bladder,Outcome
+Antivirals,439795,Minimal cognitive impairment,Outcome
+Antivirals,436155,Redundant prepuce and phimosis,Outcome

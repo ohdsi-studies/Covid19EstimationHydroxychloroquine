@@ -27,7 +27,7 @@ Requirements
 - [Java](http://java.com)
 - 25 GB of free disk space
 
-See [this video](https://youtu.be/K9_0s2Rchbo) for instructions on how to set up the R environment on Windows.
+See [here](https://ohdsi.github.io/MethodsLibrary/rSetup.html) for instructions on how to set up the R environment on Windows.
 
 How to run
 ==========
@@ -132,6 +132,11 @@ install_github("ohdsi/FeatureExtraction", dependencies = TRUE, INSTALL_opts = '-
                              remoteFolder = "Covid19EstimationHydroxychloroquine",
                              fileName = "<directory location of outputFolder/export>")
   ```
+  
+Support
+=======
+* Developer questions/comments/feedback: <a href="http://forums.ohdsi.org/c/developers">OHDSI Forum</a>
+* We use the <a href="https://github.com/OHDSI/Covid19EstimationHydroxychloroquine/issues">GitHub issue tracker</a> for all bugs/issues/enhancements
   
 License
 =======

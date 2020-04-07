@@ -3,6 +3,7 @@
 extras
 ^\.Rprofile$
 documents
+Covid19HcqSccs
 readme.md
 studyReadme.md
 HydraConfig.json

@@ -1,0 +1,18 @@
+name,atlasName,atlasId,cohortId
+hospitalizationsWithPneumonia,Hospitalizations with pneumonia,14717,14717
+episodesOfAcuteRespiratoryDistress,Episodes of acute respiratory distress,14867,14867
+chestPainOrAngina,Persons with chest pain or angina,7396,7396
+venousThromboembolicEvents,Venous thromboembolic (pulmonary embolism and deep vein thrombosis) events ,7398,7398
+acuteRenalFailure,Acute renal failure events,7382,7382
+endStageRenalDisease,Persons with end stage renal disease,7374,7374
+hepaticFailure,Persons with hepatic failure,7381,7381
+acutePancreatitis,Acute pancreatitis events,7400,7400
+heartFailure,Persons with heart failure,7369,7369
+totalCardiovascularDiseaseEvents,"Total cardiovascular disease events (ischemic stroke, hemorrhagic stroke, heart failure, acute myocardial infarction or sudden cardiac death)",7367,7367
+angioedema,Angioedema events,7377,7377
+cardiacArrhythmia,Person with cardiac arrhythmia,7399,7399
+bradycardia,Persons with bradycardia,7404,7404
+gastrointestinalBleeding,Gastrointestinal bleeding events,7376,7376
+transientIschemicAttack,Transient ischemic attack events,7370,7370
+stroke,Stroke (ischemic or hemorrhagic) events,7464,7464
+acuteMyocardialInfarction,Acute myocardial infarction events,7364,7364

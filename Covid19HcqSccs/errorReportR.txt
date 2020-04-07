@@ -1,0 +1,30 @@
+Thread: Main
+Message:  Error in runSelfControlledCaseSeries(connectionDetails = connectionDetails,  :    object 'exposureIds' not found 
+Level:  FATAL
+Time:  2020-04-07 02:50:46
+
+Stack trace:
+3: SelfControlledCaseSeries.R#58: createTos(outputFolder = outputFolder, exposureIds = exposureIds)
+2: Main.R#92: runSelfControlledCaseSeries(connectionDetails = connectionDetails, cdmDatabaseSchema = cdmDatabaseSchema, outcomeDatabaseSchema = cohortDatabaseSchema, outcomeTable = coho
+1: execute(connectionDetails = connectionDetails, cdmDatabaseSchema = cdmDatabaseSchema, cohortDatabaseSchema = cohortDatabaseSchema, cohortTable = cohortTable, oracleTempSchema = oracl
+
+R version:
+R version 3.6.1 (2019-07-05)
+
+Platform:
+x86_64-w64-mingw32
+
+Attached base packages:
+- stats
+- graphics
+- grDevices
+- utils
+- datasets
+- methods
+- base
+
+Other attached packages:
+- Covid19HcqSccs (0.0.1)
+- DatabaseConnector (2.4.3)
+
+

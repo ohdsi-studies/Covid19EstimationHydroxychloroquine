@@ -1,0 +1,30 @@
+Package: Covid19HcqSccs
+Type: Package
+Title: Self-Controlled Case Series Analysis of the Safety of Hydroxychloroquine
+Version: 0.0.1
+Date: 2020-04-07
+Authors@R: c(
+    person("Martijn", "Schuemie", , "schuemie@ohdsi.org", role = c("aut", "cre"))
+    )
+Maintainer: Martijn Schuemie <schuemie@ohdsi.org>
+Description: Hydroxychloroquine is being considered for use in treatment and prophylaxis of COVID-19 in rapid clinical trials across the world. However, the full safety profiles of this drugs is unknown, and the current trials are unlikely to be powered or have sufficient follow-up time to evaluate most safety outcomes. The aim of this OHDSI study is to use existing retrospective data to evaluate the safety of Hydroxychloroquine, using the self-controlled case series (SCCS) design.
+License: Apache License 2.0
+Depends:
+    DatabaseConnector
+Imports:
+    SqlRender,
+	SelfControlledCaseSeries (>= 1.4.2),
+    ParallelLogger,
+    Cyclops,
+    EmpiricalCalibration (>= 2.0.2),
+    ff,
+    dplyr,
+    tibble,
+    readr
+Remotes:
+    ohdsi/ParallelLogger@develop
+    ohdsi/Cyclops
+    ohdsi/SelfControlledCaseSeries
+NeedsCompilation: no
+RoxygenNote: 7.1.0
+Encoding: UTF-8
