@@ -21,7 +21,21 @@ How to run
 
 1. First, install the package:
   ```r
+  # Prevents errors due to packages being built for other R versions: 
+  Sys.setenv("R_REMOTES_NO_ERRORS_FROM_WARNINGS" = TRUE)
+
+  # First, it probably is best to make sure you are up-to-date on all existing packages. 
+  # Important: This code is best run in R, not RStudio, as RStudio may have some libraries 
+  # (like 'rlang') in use.
+  update.packages(ask = "graphics")
+
+  # When asked to update packages, select '3' ('none') (could be multiple times)
+  # When asked whether to install from source, select 'No' (could be multiple times)
   install.packages("devtools")
+  devtools::install_github("ohdsi/ParallelLogger", ref = "develop")
+  devtools::install_github("ohdsi/Cyclops")
+  devtools::install_github("ohdsi/EmpiricalCalibration")
+  devtools::install_github("ohdsi/SelfControlledCaseSeries")
   devtools::install_github("ohdsi-studies/Covid19EstimationHydroxychloroquine/Covid19HcqSccs")
   ```
 2. Execute the study by modifying and executing the following code:
