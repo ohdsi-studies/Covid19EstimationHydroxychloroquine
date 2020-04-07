@@ -22,8 +22,8 @@ Imports:
     tibble,
     readr
 Remotes:
-    ohdsi/ParallelLogger@develop
-    ohdsi/Cyclops
+    ohdsi/ParallelLogger@develop,
+    ohdsi/Cyclops,
     ohdsi/SelfControlledCaseSeries
 NeedsCompilation: no
 RoxygenNote: 7.1.0
