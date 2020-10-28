@@ -1,7 +1,7 @@
 OHDSI COVID-19 Studyathon: Hydroxychloroquine population-level effect estimation
 =============
 
-<img src="https://img.shields.io/badge/Study%20Status-Results%20Available-yellow.svg" alt="Study Status: Results Available"> 
+<img src="https://img.shields.io/badge/Study%20Status-Complete-orange.svg" alt="Study Status: Complete"> 
 
 - Analytics use case(s): **Population-Level Estimation**
 - Study type: **Clinical Application**
