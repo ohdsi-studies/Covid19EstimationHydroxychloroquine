@@ -31,30 +31,13 @@ See [here](https://ohdsi.github.io/MethodsLibrary/rSetup.html) for instructions 
 
 How to run
 ==========
-1. In `R`, use the following code to install the dependencies:
+1. Create an empty folder or new RStudio project, and in `R`, use the following code to install the study package and its dependencies:
 
   ```r
-  install.packages("devtools")
-  library(devtools)
-  install_github("ohdsi/SqlRender")
-  install_github("ohdsi/DatabaseConnector")
-  install_github("ohdsi/OhdsiSharing")
-  install_github("ohdsi/FeatureExtraction")
-  install_github("ohdsi/CohortMethod")
-  install_github("ohdsi/EmpiricalCalibration")
-  install_github("ohdsi/MethodEvaluation")
-  ```
-*Note: Failure to update packages to latest versions as of 26MAR2020 (especially Empirical Calibration) may result in errors in study packaging during export. If you encounter an error message during installation that says, 'Failure to create lock directory.' Try the following.*
-```r
-install_github("ohdsi/FeatureExtraction", dependencies = TRUE, INSTALL_opts = '--no-lock')
-  ```
-  
-2. In 'R', use the following code to install the Covid19EstimationHydroxychloroquine package:
-
-  ```r
-  devtools::install_github("ohdsi-studies/Covid19EstimationHydroxychloroquine")
-  ```
-*Note: If you encounter errors in devtools pulling the package, you may find it easier to download the repo zip locally and uploading it through your RStudio console. Instructions to upload packages are provided in [The Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/PopulationLevelEstimation.html#running-the-study-package).*
+  install.packages("renv")
+  download.file("https://raw.githubusercontent.com/ohdsi-studies/Covid19EstimationHydroxychloroquine/reproducibility/renv.lock", "renv.lock")
+  renv::init()
+  ```  
 
 3. Once installed, you can execute the study by modifying and using the following code:
 	
@@ -62,7 +45,7 @@ install_github("ohdsi/FeatureExtraction", dependencies = TRUE, INSTALL_opts = '-
   library(Covid19EstimationHydroxychloroquine)
   
   # Optional: specify where the temporary files (used by the ff package) will be created:
-  options(fftempdir = "")
+  options(andromedaTempFolder = "")
   
   # Maximum number of cores to be used:
   maxCores <- parallel::detectCores()

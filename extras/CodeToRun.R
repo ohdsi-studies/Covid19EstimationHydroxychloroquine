@@ -1,7 +1,7 @@
 library(Covid19EstimationHydroxychloroquine)
 
 # Optional: specify where the temporary files (used by the ff package) will be created:
-options(fftempdir = "S:/FFTemp")
+options(andromedaTempFolder = "d:/andromedaTemp")
 
 # Maximum number of cores to be used:
 maxCores <- parallel::detectCores()
@@ -10,11 +10,12 @@ maxCores <- parallel::detectCores()
 outputFolder <- ""
 
 # Details for connecting to the server:
-connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = "pdw",
-                                                                server = Sys.getenv("server"),
-                                                                user = Sys.getenv("user"),
-                                                                password = Sys.getenv("password"),
-                                                                port = Sys.getenv("port"))
+connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = "postgresql",
+                                                                server = paste(keyring::key_get("postgresServer"), 
+                                                                               keyring::key_get("postgresDatabase"), sep = "/"),
+                                                                user = keyring::key_get("postgresUser"),
+                                                                password = keyring::key_get("postgresPassword"),
+                                                                port = keyring::key_get("postgresPort"))
 
 # The name of the database schema where the CDM data can be found:
 cdmDatabaseSchema <- ""

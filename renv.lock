@@ -531,6 +531,54 @@
 			"Source" : "Repository",
 			"Repository" : "CRAN"
 		},
+		"curl" : {
+			"Package" : "curl",
+			"Version" : "4.3.2",
+			"Source" : "Repository",
+			"Repository" : "CRAN"
+		},
+		"mime" : {
+			"Package" : "mime",
+			"Version" : "0.11",
+			"Source" : "Repository",
+			"Repository" : "CRAN"
+		},
+		"codetools" : {
+			"Package" : "codetools",
+			"Version" : "0.2-16",
+			"Source" : "Repository",
+			"Repository" : "CRAN"
+		},
+		"formatR" : {
+			"Package" : "formatR",
+			"Version" : "1.11",
+			"Source" : "Repository",
+			"Repository" : "CRAN"
+		},
+		"httr" : {
+			"Package" : "httr",
+			"Version" : "1.4.2",
+			"Source" : "Repository",
+			"Repository" : "CRAN"
+		},
+		"openxlsx" : {
+			"Package" : "openxlsx",
+			"Version" : "4.2.4",
+			"Source" : "Repository",
+			"Repository" : "CRAN"
+		},
+		"remotes" : {
+			"Package" : "remotes",
+			"Version" : "2.4.1",
+			"Source" : "Repository",
+			"Repository" : "CRAN"
+		},
+		"RJSONIO" : {
+			"Package" : "RJSONIO",
+			"Version" : "1.3-1.6",
+			"Source" : "Repository",
+			"Repository" : "CRAN"
+		},
 		"base64enc" : {
 			"Package" : "base64enc",
 			"Version" : "0.1-3",
@@ -588,12 +636,6 @@
 		"httpuv" : {
 			"Package" : "httpuv",
 			"Version" : "1.6.3",
-			"Source" : "Repository",
-			"Repository" : "CRAN"
-		},
-		"mime" : {
-			"Package" : "mime",
-			"Version" : "0.11",
 			"Source" : "Repository",
 			"Repository" : "CRAN"
 		},
@@ -684,6 +726,26 @@
 			"RemoteRepo" : "OhdsiSharing",
 			"RemoteUsername" : "ohdsi",
 			"RemoteRef" : "v0.2.2"
+		},
+		"OhdsiRTools" : {
+			"Package" : "OhdsiRTools",
+			"Version" : "1.10.0",
+			"Source" : "GitHub",
+			"RemoteType" : "github",
+			"RemoteHost" : "api.github.com",
+			"RemoteRepo" : "OhdsiRTools",
+			"RemoteUsername" : "ohdsi",
+			"RemoteRef" : "v1.10.0"
+		},
+		"Covid19EstimationHydroxychloroquine" : {
+			"Package" : "Covid19EstimationHydroxychloroquine",
+			"Version" : "0.0.1",
+			"Source" : "GitHub",
+			"RemoteType" : "github",
+			"RemoteHost" : "api.github.com",
+			"RemoteRepo" : "Covid19EstimationHydroxychloroquine",
+			"RemoteUsername" : "ohdsi-studies",
+			"RemoteRef" : "reproducibility"
 		}
 	}
 }

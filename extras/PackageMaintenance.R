@@ -52,7 +52,8 @@ createPositiveControlSynthesisArgs("inst/settings/")
 
 # Store environment in which the study was executed -----------------------
 OhdsiRTools::createRenvLockFile(rootPackage = "Covid19EstimationHydroxychloroquine",
-                                includeRootPackage = FALSE,
+                                includeRootPackage = TRUE,
                                 additionalRequiredPackages = c("keyring",
+                                                               "OhdsiRTools",
                                                                "shiny",
                                                                "DT"))
