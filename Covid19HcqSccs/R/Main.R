@@ -72,9 +72,9 @@ execute <- function(connectionDetails,
   on.exit(ParallelLogger::unregisterLogger("DEFAULT_ERRORREPORT_LOGGER", silent = TRUE), add = TRUE)
   
   
-  if (!is.null(getOption("fftempdir")) && !file.exists(getOption("fftempdir"))) {
-    warning("fftempdir '", getOption("fftempdir"), "' not found. Attempting to create folder")
-    dir.create(getOption("fftempdir"), recursive = TRUE)
+  if (!is.null(getOption("andromedaTempFolder")) && !file.exists(getOption("andromedaTempFolder"))) {
+    warning("andromedaTempFolder '", getOption("andromedaTempFolder"), "' not found. Attempting to create folder")
+    dir.create(getOption("andromedaTempFolder"), recursive = TRUE)
   }
   
   if (createCohorts) {
@@ -109,7 +109,6 @@ execute <- function(connectionDetails,
     generateBasicOutputTable(outputFolder = outputFolder, databaseId = databaseId) 
     ParallelLogger::logInfo("Results are now available in ", file.path(outputFolder, "sccsDiagnostics"))
   }
-  ParallelLogger::unregisterLogger("DEFAULT_ERRORREPORT_LOGGER")
   ParallelLogger::logFatal("Done")
   invisible(NULL)
 }

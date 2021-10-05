@@ -106,8 +106,8 @@ computeCovariateBalance <- function(row, cmOutputFolder, balanceFolder) {
                               sprintf("bal_t%s_c%s_o%s_a%s.rds", row$targetId, row$comparatorId, row$outcomeId, row$analysisId))
   if (!file.exists(outputFileName)) {
     ParallelLogger::logTrace("Creating covariate balance file ", outputFileName)
-    cohortMethodDataFolder <- file.path(cmOutputFolder, row$cohortMethodDataFolder)
-    cohortMethodData <- CohortMethod::loadCohortMethodData(cohortMethodDataFolder)
+    cohortMethodDataFile <- file.path(cmOutputFolder, row$cohortMethodDataFile)
+    cohortMethodData <- CohortMethod::loadCohortMethodData(cohortMethodDataFile)
     strataFile <- file.path(cmOutputFolder, row$strataFile)
     strata <- readRDS(strataFile)
     balance <- CohortMethod::computeCovariateBalance(population = strata, cohortMethodData = cohortMethodData)

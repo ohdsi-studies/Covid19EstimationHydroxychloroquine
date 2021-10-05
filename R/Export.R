@@ -108,9 +108,9 @@ exportAnalyses <- function(outputFolder, exportFolder) {
   ParallelLogger::logInfo("- covariate_analysis table")
   reference <- readRDS(file.path(outputFolder, "cmOutput", "outcomeModelReference.rds"))
   getCovariateAnalyses <- function(cmAnalysis) {
-    cmDataFolder <- reference$cohortMethodDataFolder[reference$analysisId == cmAnalysis$analysisId][1]
-    cmData <- CohortMethod::loadCohortMethodData(file.path(outputFolder, "cmOutput", cmDataFolder), readOnly = TRUE)
-    covariateAnalysis <- ff::as.ram(cmData$analysisRef)
+    cmDataFile <- reference$cohortMethodDataFile[reference$analysisId == cmAnalysis$analysisId][1]
+    cmData <- CohortMethod::loadCohortMethodData(file.path(outputFolder, "cmOutput", cmDataFile))
+    covariateAnalysis <- dplyr::collect(cmData$analysisRef)
     covariateAnalysis <- covariateAnalysis[, c("analysisId", "analysisName")]
     colnames(covariateAnalysis) <- c("covariate_analysis_id", "covariate_analysis_name")
     covariateAnalysis$analysis_id <- cmAnalysis$analysisId    
@@ -213,7 +213,7 @@ exportMetadata <- function(outputFolder,
   ParallelLogger::logInfo("Exporting metadata")
   
   getInfo <- function(row) {
-    cmData <- CohortMethod::loadCohortMethodData(file.path(outputFolder, "cmOutput", row$cohortMethodDataFolder), skipCovariates = TRUE)
+    cmData <- CohortMethod::loadCohortMethodData(file.path(outputFolder, "cmOutput", row$cohortMethodDataFile))
     info <- data.frame(targetId = row$targetId,
                        comparatorId = row$comparatorId,
                        targetMinDate = min(cmData$cohorts$cohortStartDate[cmData$cohorts$treatment == 1]),
@@ -225,8 +225,8 @@ exportMetadata <- function(outputFolder,
     return(info)
   }
   reference <- readRDS(file.path(outputFolder, "cmOutput", "outcomeModelReference.rds"))
-  reference <- unique(reference[, c("targetId", "comparatorId", "cohortMethodDataFolder")])
-  reference <- split(reference, reference$cohortMethodDataFolder)
+  reference <- unique(reference[, c("targetId", "comparatorId", "cohortMethodDataFile")])
+  reference <- split(reference, reference$cohortMethodDataFile)
   info <- lapply(reference, getInfo)
   info <- do.call("rbind", info)
   
@@ -329,9 +329,9 @@ exportMetadata <- function(outputFolder,
   ParallelLogger::logInfo("- covariate table")
   reference <- readRDS(file.path(outputFolder, "cmOutput", "outcomeModelReference.rds"))
   getCovariates <- function(analysisId) {
-    cmDataFolder <- reference$cohortMethodDataFolder[analysisId][1]
-    cmData <- CohortMethod::loadCohortMethodData(file.path(outputFolder, "cmOutput", cmDataFolder), readOnly = TRUE)
-    covariateRef <- ff::as.ram(cmData$covariateRef)
+    cmDataFile <- reference$cohortMethodDataFile[analysisId][1]
+    cmData <- CohortMethod::loadCohortMethodData(file.path(outputFolder, "cmOutput", cmDataFile))
+    covariateRef <- dplyr::collect(cmData$covariateRef)
     covariateRef <- covariateRef[, c("covariateId", "covariateName", "analysisId")]
     colnames(covariateRef) <- c("covariateId", "covariateName", "covariateAnalysisId")
     covariateRef$analysisId <- analysisId
@@ -804,13 +804,10 @@ exportDiagnostics <- function(outputFolder,
       if (is.null(metaData$psError)) {
         cmDataFile <- file.path(outputFolder,
                                 "cmOutput",
-                                reference$cohortMethodDataFolder[idx][1])
+                                reference$cohortMethodDataFile[idx][1])
         cmData <- CohortMethod::loadCohortMethodData(cmDataFile)
         model <- CohortMethod::getPsModel(ps, cmData)
         model$covariateId[is.na(model$covariateId)] <- 0
-        ff::close.ffdf(cmData$covariates)
-        ff::close.ffdf(cmData$covariateRef)
-        ff::close.ffdf(cmData$analysisRef)
         model$databaseId <- databaseId
         model$targetId <- row$targetId
         model$comparatorId <- row$comparatorId

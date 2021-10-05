@@ -41,11 +41,11 @@ UNION  select c.concept_id
 ) I
 ) C;
 
+UPDATE STATISTICS #Codesets;
 
-with primary_events (event_id, person_id, start_date, end_date, op_start_date, op_end_date, visit_occurrence_id) as
-(
--- Begin Primary Events
+
 select P.ordinal as event_id, P.person_id, P.start_date, P.end_date, op_start_date, op_end_date, cast(P.visit_occurrence_id as bigint) as visit_occurrence_id
+INTO #primary_events
 FROM
 (
   select E.person_id, E.start_date, E.end_date,
@@ -71,16 +71,14 @@ WHERE C.ordinal = 1
 	JOIN @cdm_database_schema.observation_period OP on E.person_id = OP.person_id and E.start_date >=  OP.observation_period_start_date and E.start_date <= op.observation_period_end_date
   WHERE DATEADD(day,0,OP.OBSERVATION_PERIOD_START_DATE) <= E.START_DATE AND DATEADD(day,0,E.START_DATE) <= OP.OBSERVATION_PERIOD_END_DATE
 ) P
-WHERE P.ordinal = 1
--- End Primary Events
+WHERE P.ordinal = 1;
 
-)
 SELECT event_id, person_id, start_date, end_date, op_start_date, op_end_date, visit_occurrence_id
 INTO #qualified_events
 FROM 
 (
   select pe.event_id, pe.person_id, pe.start_date, pe.end_date, pe.op_start_date, pe.op_end_date, row_number() over (partition by pe.person_id order by pe.start_date ASC) as ordinal, cast(pe.visit_occurrence_id as bigint) as visit_occurrence_id
-  FROM primary_events pe
+  FROM #primary_events pe
   
 JOIN (
 -- Begin Criteria Group
@@ -88,12 +86,12 @@ select 0 as index_id, person_id, event_id
 FROM
 (
   select E.person_id, E.event_id 
-  FROM primary_events E
+  FROM #primary_events E
   INNER JOIN
   (
     -- Begin Correlated Criteria
 SELECT 0 as index_id, p.person_id, p.event_id
-FROM primary_events P
+FROM #primary_events P
 INNER JOIN
 (
   -- Begin Condition Occurrence Criteria
@@ -118,7 +116,7 @@ HAVING COUNT(A.TARGET_CONCEPT_ID) >= 1
 UNION ALL
 -- Begin Correlated Criteria
 SELECT 1 as index_id, p.person_id, p.event_id
-FROM primary_events P
+FROM #primary_events P
 INNER JOIN
 (
   -- Begin Drug Exposure Criteria
@@ -143,7 +141,7 @@ HAVING COUNT(A.TARGET_CONCEPT_ID) >= 2
 UNION ALL
 -- Begin Correlated Criteria
 SELECT 2 as index_id, p.person_id, p.event_id
-FROM primary_events P
+FROM #primary_events P
 INNER JOIN
 (
   -- Begin Procedure Occurrence Criteria
@@ -414,8 +412,6 @@ DROP TABLE #best_events;
 
 }
 
-
-
 TRUNCATE TABLE #cohort_rows;
 DROP TABLE #cohort_rows;
 
@@ -430,6 +426,9 @@ DROP TABLE #qualified_events;
 
 TRUNCATE TABLE #included_events;
 DROP TABLE #included_events;
+
+TRUNCATE TABLE #primary_events;
+DROP TABLE #primary_events;
 
 TRUNCATE TABLE #Codesets;
 DROP TABLE #Codesets;
