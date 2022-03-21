@@ -1,7 +1,7 @@
 Package: Covid19EstimationHydroxychloroquine
 Type: Package
 Title: A Package Skeleton for Comparative Effectiveness Studies
-Version: 0.0.1
+Version: 0.0.2
 Author: Martijn Schuemie [aut, cre]
 Maintainer: Martijn J. Schuemie <schuemie@ohdsi.org>
 Description: A skeleton package, to be used as a starting point when implementing comparative effect studies.
