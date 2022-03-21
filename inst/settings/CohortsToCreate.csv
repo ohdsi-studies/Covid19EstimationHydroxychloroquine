@@ -2,7 +2,7 @@ atlasId,atlasName,cohortId,name
 137,[OHDSI-Covid19] Hydroxychloroquine + Azithromycin,137,OHDSICovid19_Hydroxychloroquine__Azithromycin
 143,[OHDSI-Covid19] Hydroxychloroquine + Amoxicillin,143,OHDSICovid19_Hydroxychloroquine__Amoxicillin
 6,[LEGEND HTN] Persons with chest pain or angina,6,LEGEND_HTN_Persons_with_chest_pain_or_angina
-7,"[LEGEND HTN] Venous thromboembolic (pulmonary embolism and deep vein thrombosis) events ",7,LEGEND_HTN_Venous_thromboembolic_pulmonary_embolism_and_deep_vein_thrombosis_events_
+7,"[LEGEND HTN] Venous thromboembolic (pulmonary embolism and deep vein thrombosis) events ",7,7
 8,[LEGEND HTN] Acute renal failure events,8,LEGEND_HTN_Acute_renal_failure_events
 9,[LEGEND HTN] Persons with end stage renal disease,9,LEGEND_HTN_Persons_with_end_stage_renal_disease
 10,[LEGEND HTN] Persons with hepatic failure,10,LEGEND_HTN_Persons_with_hepatic_failure
@@ -17,5 +17,5 @@ atlasId,atlasName,cohortId,name
 20,[LEGEND HTN] Transient ischemic attack events,20,LEGEND_HTN_Transient_ischemic_attack_events
 21,[LEGEND HTN] Stroke (ischemic or hemorrhagic) events,21,LEGEND_HTN_Stroke_ischemic_or_hemorrhagic_events
 22,[LEGEND HTN] Acute myocardial infarction events,22,LEGEND_HTN_Acute_myocardial_infarction_events
-2,[OHDSI Cov19] New users of Hydroxychloroquine with prior rheumatoid arthritis,2,OHDSI_Cov19_New_users_of_Hydroxychloroquine_with_prior_rheumatoid_arthritis
-28,[OHDSI Cov19] New users of sulfasazine with prior rheumatoid arthritis,28,OHDSI_Cov19_New_users_of_sulfasazine_with_prior_rheumatoid_arthritis
+2,[OHDSI Cov19] New users of Hydroxychloroquine with prior rheumatoid arthritis,2,2
+28,[OHDSI Cov19] New users of sulfasazine with prior rheumatoid arthritis,28,28
